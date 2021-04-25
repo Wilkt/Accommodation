@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Student Accommodation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="home.html"><img src="logohouse.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="upload.html">UNITS</a></li>
+					<li><a href="enquiry.html">ENQUIRY</a></li>
+					<li><a href="Lsignup.html">LANDLORD</a></li>
+					<li><a href="signup.html">STUDENT</a></li>
+					
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+<div class="text-box">
+	<h1>Student's Accommodation Homes</h1>
+	<p>Here you will be able to book for a vacany after you have gone through the available units. </br>The aim is to provide students with good and affordable accomodation.</p>
+	<a href="" class="hero-btn">Visit Us To Know More</a>
+</div>
+	</section>
+
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right="0";
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px"
+		}
+	</script>
+</body>
+</html>
